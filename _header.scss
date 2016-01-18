@@ -1,0 +1,123 @@
+#header {
+	position: fixed;
+	min-width: $min-width;
+	height: $header-height - 5;
+	width: 100%;
+	top: 0;
+	border-width: 0 0 5px 0;
+	border-image: linear-gradient(to right,$dw-blue,$dw-red) 100% 1;
+	#header-bottom-left {
+		height: $header-height - 5 - 19;
+		#header-img {
+			background: none;
+			font-size: 0;
+			text-indent: 0;
+			margin: 0;
+			padding: 0;
+			width: 1px;
+			height: 1px;
+			&:before, &:after {
+				position: fixed;
+				top: 0;
+				left: 0;
+				margin: 0;
+				font-size: 9px;
+				line-height: 18px;
+			}
+		}
+		.pagename {
+			display: inline-block;
+			height: $header-height - 5 - 19;
+			font-size: 0;
+			a {
+				text-indent: -1337em;
+				display: inline-block;
+				height: $header-height - 5 - 19 - 20;
+				width: $header-height - 5 - 19 - 20;
+				margin: 10px;
+				background-image: url(%%logo%%);
+				background-size: ($header-height - 5 - 19 - 20) ($header-height - 5 - 19 - 20);
+				background-position: 0 0;
+				background-repeat: no-repeat;
+				transition: -webkit-transform 0.5s, transform 0.5s;
+				&:hover {
+					-webkit-transform: rotate(360deg);
+					transform: rotate(360deg);
+				}
+			}
+		}
+		.tabmenu {
+			margin: 0;
+			height: $header-height - 5 - 19;
+			line-height: $header-height - 5 - 19;
+			li {
+				margin: 0 0 0 18px;
+				a {
+					padding: 0;
+					background: none !important;
+					border: 0 !important;
+					font-size: 17px;
+					font-weight: 300;
+					transition: color 0.3s;
+				}
+			}
+		}
+	}
+	#header-bottom-right {
+		border-radius: 0;
+		background: none;
+		.beta-hint {
+			display: inline;
+			height: initial;
+			position: initial;
+			opacity: 1;
+			a {
+				margin: 0;
+				position: initial;
+				display: inline;
+				background: 0;
+				font-size: 0;
+				line-height: 0;
+				opacity: 1;
+				&:hover {
+					opacity: 0.9;
+				}
+				&:after {
+					content: "β";
+					font-size: 11px;
+					font-weight: 600;
+				}
+			}
+			&:after {
+				content: "|";
+				color: $secondary;
+				margin: 0 0.7ex;
+				cursor: default;
+			}
+		}
+		#modmail, a.pref-lang, .logout a {
+			@extend .header-icon-spreadsheet;
+		}
+		#modmail, a.pref-lang, .logout a, #mail, ul, li {
+			@extend .header-icon;
+		}
+		ul, li {
+			vertical-align: middle;
+			display: inline-block;
+		}
+		#modmail {
+			&.nohavemail {
+				background-position: -0px -0px;
+			}
+			&.havemail {
+				background-position: -64px -0px;
+			}
+		}
+		a.pref-lang {
+			background-position: -16px -0px;
+		}
+		.logout a {
+			background-position: -32px -0px;
+		}
+	}
+}
