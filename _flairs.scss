@@ -14,20 +14,44 @@
 
 /* LINK FLAIRS AND FAKE LINK FLAIRS FOR SELF POSTS AND POSTS W/O THUMBNAIL */
 
-.content[role='main'] .link.linkflair .thumbnail ~ .entry .linkflairlabel, .content[role='main'] .search-result-link.has-linkflair .thumbnail ~ div header .linkflairlabel{display: none}
+.linkflair-suggestion, .linkflair-news, .linkflair-submission {
+  .thumbnail {
+    &:before {
+      @extend .thumbnail-overlay;
+    }
+    &:not(.default):not(.self):before {
+      background-color: rgba(0,0,0,0.74);
+    }
+    & ~ .entry .linkflairlabel, & ~ div header .linkflairlabel {
+      display: none;
+    }
+  }
+}
 
-.content[role='main'] .link.linkflair .thumbnail:before,
-.content[role='main'] .link:not(.linkflair) .thumbnail.default:before,
-.content[role='main'] .link:not(.linkflair) .thumbnail.self:before,
-.content[role='main'] .search-result-link.has-linkflair .thumbnail:before,
-.content[role='main'] .search-result-link.no-linkflair .thumbnail.default:before,
-.content[role='main'] .search-result-link.no-linkflair .thumbnail.self:before
-{position: absolute; display:block; width: 70px; height: 70px; line-height: 70px; padding: 0; margin: 0; text-align: center; background: none; border: 0; font-size: 10px; opacity: .9; overflow: hidden; text-overflow: ellipsis; pointer-events: none; z-index: 5}
+.linkflair-suggestion .thumbnail:before {
+  content: "Suggestion";
+  font-size: 11px !important;
+}
+.linkflair-news .thumbnail:before {
+  content: "News";
+  font-size: 16px !important;
+}
+.linkflair-submission .thumbnail:before {
+  content: "Submission";
+  font-size: 11px !important;
+}
 
-.content[role='main'] .link.linkflair-suggestion .thumbnail:before, .content[role='main'] .search-result-link.linkflair-suggestion .thumbnail:before{content:"Suggestion"; font-size: 11px !important}
-.content[role='main'] .link.linkflair-news .thumbnail:before, .content[role='main'] .search-result-link.linkflair-news .thumbnail:before{content:"News"; font-size: 16px !important}
-.content[role='main'] .link.linkflair-submission .thumbnail:before, .content[role='main'] .search-result-link.linkflair-submission .thumbnail:before{content:"Submission"; font-size: 11px !important}
-.content[role='main'] .link:not(.linkflair) .thumbnail.default:before, .content[role='main'] .search-result-link.no-linkflair .thumbnail.default:before{content:"Link"; font-size: 14px !important}
-.content[role='main'] .link:not(.linkflair) .thumbnail.self:before, .content[role='main'] .search-result-link.no-linkflair .thumbnail.self:before{content:"Text post"; font-size: 12px !important}
-
-.content[role='main'] .link.linkflair .thumbnail:not(.default):not(.self):before, .content[role='main'] .search-result-link.has-linkflair .thumbnail:not(.default):not(.self):before{background-color: rgba(0,0,0,0.74)} /* posts with thumbnail + link flair */
+.link:not(.linkflair), .search-result-link.no-linkflair {
+  .thumbnail {
+    &.default:before {
+      @extend .thumbnail-overlay;
+      content: "Link";
+      font-size: 14px !important;
+    }
+    &.self:before {
+      @extend .thumbnail-overlay;
+      content:"Text post";
+      font-size: 12px !important;
+    }
+  }
+}
