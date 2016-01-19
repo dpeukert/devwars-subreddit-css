@@ -1,18 +1,47 @@
-/* USER FLAIRS, LINK FLAIRS IN SIDEBAR AND LINK FLAIRS WITHOUT THUMBNAILS */
+// User flair
 
-.flair, .linkflairlabel{border-radius: 0; border: 0; vertical-align: middle;}
-.flair{background: none;}
-.linkflairlabel{padding: 2px 3px;}
+.flair {
+  background: none;
+  border-radius: 0; 
+  border: 0;
+  vertical-align: middle;
+  &:before {
+    content: "";
+    border: none !important;
+    top:20px;
+    padding:0px;
+    background: url(%%spritesheet%%);
+    display:inline-block;
+    vertical-align: middle;
+  }
+}
 
-.flair:before {content: ""; border: none !important; top:20px; padding:0px; background: url(%%spritesheet%%); display:inline-block; vertical-align: middle;}
+.flair-css, .flair-css:before, .flair-html, .flair-html:before, .flair-js, .flair-staff {
+  width: 14px;
+  height: 16px;
+}
+.flair-css:before {
+  background-position: -2px -2px;
+}
+.flair-html:before {
+  background-position: -20px -2px;
+}
+.flair-js:before {
+  width: 15px; height: 16px; background-position: -38px -2px;
+}
+.flair-staff:before {
+  width: 16px; height: 16px; background-position: -57px -2px;
+}
 
-.flair-css, .flair-css:before, .flair-html, .flair-html:before, .flair-js, .flair-staff{width: 14px; height: 16px;}
-.flair-css:before {background-position: -2px -2px;}
-.flair-html:before {background-position: -20px -2px;}
-.flair-js:before {width: 15px; height: 16px; background-position: -38px -2px;}
-.flair-staff:before {width: 16px; height: 16px; background-position: -57px -2px;}
 
-/* LINK FLAIRS AND FAKE LINK FLAIRS FOR SELF POSTS AND POSTS W/O THUMBNAIL */
+// Link flairs + fake link flairs
+
+.linkflairlabel {
+  border-radius: 0;
+  border: 0;
+  vertical-align: middle;
+  padding: 2px 3px;
+}
 
 .linkflair-suggestion, .linkflair-news, .linkflair-submission {
   .thumbnail {
