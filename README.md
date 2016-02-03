@@ -9,3 +9,6 @@
 ### images/social-icons, images/social-icons-hover
 
 [Font Awesome by Dave Gandy](http://fontawesome.io), [SIL OFL 1.1](http://scripts.sil.org/OFL)
+
+## CSS license
+GPL v3
