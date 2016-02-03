@@ -68,7 +68,7 @@ a, .md a, h2, .side .tagline a, .tagline a, .bottommenu a, .bottommenu a.updated
 
 #header .tabmenu li a:hover, .link .score.likes, .tagline .submitter{color: $dw-blue;}
 .flat-vert.title{border-bottom: 1px solid $dw-blue;}
-.morelink, .side .usertext .md p:nth-last-of-type(1) a, .side .usertext .md p:nth-last-of-type(2) a, .nextprev a{background: $dw-blue !important}
+.morelink, .side .usertext .md p:nth-last-of-type(1) a, .side .usertext .md p:nth-last-of-type(2) a, .nextprev a, .usertable > .toggle{background: $dw-blue !important}
 
 @import 'header';
 @import 'sidebar';

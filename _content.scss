@@ -53,11 +53,13 @@
 
 /* SUBMIT PAGE */
 
-.formtabs-content{border-top: 4px solid #0398db}
-ul.tabmenu.formtab{padding-left: 0}
-.tabmenu.formtab li a{border: 0; background-color: #252525; color: white; width: 110px; height: 35px; display: inline-block; line-height: 35px; text-align: center; font-size: 14px !important;}
-.tabmenu.formtab li a:hover{background-color: $dw-red;}
-.tabmenu.formtab li.selected a{background-color: #0398db;}
+.formtabs-content{border-top: 4px solid $dw-blue}
+ul.tabmenu.formtab, ul.tabmenu{padding-left: 0;}
+.tabmenu li{font-weight: normal !important;}
+.tabmenu.formtab li a, .tabmenu li a{border: 0 !important; background-color: #252525; color: white !important; height: 35px; display: inline-block; line-height: 35px; text-align: center; font-size: 14px !important; transition: background-color .3s ease-out;}
+.tabmenu.formtab li a{width: 110px;}
+.tabmenu.formtab li a:hover, .tabmenu li a:hover{background-color: $dw-red;}
+.tabmenu.formtab li.selected a, .tabmenu li.selected a{background-color: $dw-blue;}
 
 #sr-autocomplete-area{z-index: 98}
 
@@ -93,6 +95,21 @@ ul.tabmenu.formtab{padding-left: 0}
 
 .wiki-page .wiki-page-content .discussionlink{margin-left: 0; padding: 1px 8px}
 .wiki-page .wiki-page-content .discussionlink a{padding-left: 0}
+
+.wiki-page .pageactions{border: 0; border-radius: 0; border-bottom: 4px solid $dw-blue;}
+.wiki-page .pageactions .wikiaction{margin: 0 3px; border-radius: 0; background-color: #252525; color: white; transition: background-color .3s ease-out;}
+.wiki-page .pageactions .wikiaction-current{background-color: $dw-blue;}
+.wiki-page .pageactions .wikiaction:hover{background-color: $dw-red;}
+
+#WikiAllowEditor button[type='submit']{margin-left: 8px}
+
+/* FLAIRS PAGE */
+
+#flair_jump_name + button[type='submit']{margin-left: 8px; height: 29px; vertical-align: top;}
+.flair-settings ~ .tabpane-content{border: 0; border-top: 4px solid $dw-blue;}
+
+.usertable > .toggle .togglebutton, .usertable > .toggle .error{border: 0; padding: 0; margin: 0; color: white;}
+.usertable > .toggle .error a{color: white; text-decoration: underline;}
 
 /* FOOTER */
 
