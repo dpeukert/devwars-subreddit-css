@@ -54,12 +54,12 @@
 /* SUBMIT PAGE */
 
 .formtabs-content{border-top: 4px solid $dw-blue}
-ul.tabmenu.formtab, ul.tabmenu{padding-left: 0;}
-.tabmenu li{font-weight: normal !important;}
-.tabmenu.formtab li a, .tabmenu li a{border: 0 !important; background-color: #252525; height: 35px; display: inline-block; line-height: 35px; text-align: center; font-size: 14px !important; transition: background-color .3s ease-out;}
-.tabmenu.formtab li a{color: white !important; width: 110px;}
-.tabmenu.formtab li a:hover, .tabmenu li a:hover{background-color: $dw-red;}
-.tabmenu.formtab li.selected a, .tabmenu li.selected a{background-color: $dw-blue;}
+.content[role="main"] ul.tabmenu.formtab, .content[role="main"] ul.tabmenu{padding-left: 0;}
+.content[role="main"] .tabmenu li{font-weight: normal !important;}
+.content[role="main"] .tabmenu.formtab li a, .content[role="main"] .tabmenu li a{color: white !important; border: 0 !important; background-color: #252525; height: 35px; display: inline-block; line-height: 35px; text-align: center; font-size: 14px !important; transition: background-color .3s ease-out;}
+.content[role="main"] .tabmenu.formtab li a{width: 110px;}
+.content[role="main"] .tabmenu.formtab li a:hover, .content[role="main"] .tabmenu li a:hover{background-color: $dw-red;}
+.content[role="main"] .tabmenu.formtab li.selected a, .content[role="main"] .tabmenu li.selected a{background-color: $dw-blue;}
 
 #sr-autocomplete-area{z-index: 98}
 
