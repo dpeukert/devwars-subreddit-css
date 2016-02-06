@@ -56,8 +56,8 @@
 .formtabs-content{border-top: 4px solid $dw-blue}
 ul.tabmenu.formtab, ul.tabmenu{padding-left: 0;}
 .tabmenu li{font-weight: normal !important;}
-.tabmenu.formtab li a, .tabmenu li a{border: 0 !important; background-color: #252525; color: white !important; height: 35px; display: inline-block; line-height: 35px; text-align: center; font-size: 14px !important; transition: background-color .3s ease-out;}
-.tabmenu.formtab li a{width: 110px;}
+.tabmenu.formtab li a, .tabmenu li a{border: 0 !important; background-color: #252525; height: 35px; display: inline-block; line-height: 35px; text-align: center; font-size: 14px !important; transition: background-color .3s ease-out;}
+.tabmenu.formtab li a{color: white !important; width: 110px;}
 .tabmenu.formtab li a:hover, .tabmenu li a:hover{background-color: $dw-red;}
 .tabmenu.formtab li.selected a, .tabmenu li.selected a{background-color: $dw-blue;}
 

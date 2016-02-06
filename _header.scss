@@ -52,6 +52,9 @@
 			line-height: $header-height - 5 - 19;
 			li {
 				margin: 0 0 0 18px;
+				&.selected a {
+					color: $dw-red;
+				}
 				a {
 					padding: 0;
 					background: none !important;
@@ -120,4 +123,14 @@
 			background-position: -32px -0px;
 		}
 	}
+	#sr-header-area {
+		.selected a{
+			color: $dw-red;
+		}
+	}
+}
+
+#beta-help {
+	position: fixed;
+	top: 105px !important;
 }

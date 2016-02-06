@@ -10,5 +10,5 @@
 
 [Font Awesome by Dave Gandy](http://fontawesome.io), [SIL OFL 1.1](http://scripts.sil.org/OFL)
 
-## CSS license
+## CSS code license
 GPL v3

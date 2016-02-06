@@ -1,6 +1,10 @@
 .side{background: $darker-primary-bg;}
 .side, .side .usertext p:nth-of-type(1){min-width: $sidebar-width}
 #search input[type='text']{border: 0; color: $primary !important}
+#search input[type='text']::-webkit-input-placeholder{color: $secondary}
+#search input[type='text']::-moz-placeholder{color: $secondary}
+#search input[type='text']:-ms-input-placeholder{color: $secondary}
+#search input[type='text']:-moz-placeholder{color: $secondary}
 #searchexpando{background:none; border: 0; padding: 4px 10px}
 #searchexpando p{margin-bottom: 0px}
 
