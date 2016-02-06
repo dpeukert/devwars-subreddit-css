@@ -20,6 +20,8 @@ $header-height: 105px;
 
 /** GLOBAL **/
 
+// TODO: move the rest of the selectors to includes and use nesting
+
 body{min-width: $min-width; background: $darker-primary-bg;}
 
 .morelink, .side .usertext p:nth-of-type(1), .tabmenu.formtab a, .tabmenu.formtab .selected a, input{font-family: Arial, sans-serif !important}
