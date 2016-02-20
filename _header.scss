@@ -53,7 +53,7 @@
 			li {
 				margin: 0 0 0 18px;
 				&.selected a {
-					color: $dw-red;
+					color: $dw-blue;
 				}
 				a {
 					padding: 0;
@@ -62,6 +62,9 @@
 					font-size: 17px;
 					font-weight: 300;
 					transition: color 0.3s;
+					&:hover {
+						color: $dw-red;
+					}
 				}
 			}
 		}
