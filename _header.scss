@@ -8,6 +8,7 @@
 	border-image: linear-gradient(to right,$dw-blue,$dw-red) 100% 1;
 	#header-bottom-left {
 		height: $header-height - 5 - 19;
+		background-color: $primary-bg;
 		#header-img {
 			background: none;
 			font-size: 0;
@@ -127,8 +128,29 @@
 		}
 	}
 	#sr-header-area {
+		background-color: $primary-bg;
 		.selected a{
 			color: $dw-red;
+		}
+		.drop-choices {
+			border: 1px solid $secondary;
+			background-color: $primary-bg;
+			.choice {
+				color: $secondary;
+				&:hover {
+					color: $primary-bg;
+					background-color: $secondary;
+				}
+				&.bottom-option {
+					border-top: 1px dotted $secondary;
+				}
+			}
+		}
+		.sr-list {
+			#sr-more-link {
+				color: $primary-bg;
+				background-color: $secondary;
+			}
 		}
 	}
 }
