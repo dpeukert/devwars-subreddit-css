@@ -146,17 +146,15 @@
 				}
 			}
 		}
-		.sr-list {
-			#sr-more-link {
-				color: $primary-bg;
-				background-color: $secondary;
-			}
-			.selected a{
-				color: $dw-red;
-			}
-		}
 		.sr-bar a {
 			color: $primary;
+		}
+		.sr-list .selected a{
+			color: $dw-red;
+		}
+		#sr-more-link {
+			color: $primary-bg;
+			background-color: $secondary;
 		}
 	}
 }
