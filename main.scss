@@ -50,7 +50,7 @@ body, .md, .usertext .md, .thing .title, #header-bottom-right, #header-bottom-ri
 .res .RES-keyNav-activeElement, .flairselector li.selected{border: 1px dashed $secondary}
 .comment .child, .comment .showreplies {border-left: 1px dotted $secondary}
 
-a, .md a, h2, .side .tagline a, .tagline a, .bottommenu a, .bottommenu a.updated, .wiki-page .wiki-page-content .description h2, .res .RESSubscriptionButton, .thing .title:visited, .thing.visited .title, .organic-listing .help, .combined-search-page .search-result a, .combined-search-page .search-result a:visited, .combined-search-page a.search-title:visited, .combined-search-page .search-result .search-expando-button, .combined-search-page .search-result :link>mark, .search-result :visited, .search-result :visited>mark{color: $links;}
+a, .md a, h2, .side .tagline a, .tagline a, .bottommenu a, .bottommenu a.updated, .wiki-page .wiki-page-content .description h2, .res .RESSubscriptionButton, .thing .title:visited, .thing.visited .title, .organic-listing .help, .combined-search-page .search-result div a, .combined-search-page .search-result a:visited, .combined-search-page a.search-title:visited, .combined-search-page .search-result .search-expando-button, .combined-search-page .search-result :link>mark, .search-result :visited, .search-result :visited>mark{color: $links;}
 .infobar, .content.submit .info-notice, .comment-visits-box, .res .RESDialogSmall.livePreview{border: 1px solid $links;}
 .res .RESDialogSmall.livePreview h3{border-bottom: 1px solid $links;}
 
