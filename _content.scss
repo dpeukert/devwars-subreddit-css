@@ -35,7 +35,7 @@ ul#image-preview-list .description pre{color: $primary;}
 .arrow.up{background-position: -63px 0px}
 .arrow.upmod{background-position: -42px 0px}
 
-.thumbnail{border-radius: 50%; margin: -5px 12px 5px 3px; height: 70px; position: relative}
+.thumbnail{border-radius: 50%; margin: -5px 12px 5px 3px; height: 70px; position: relative; color: $secondary}
 
 .thumbnail img, .thumbnail.self, .thumbnail.default{height: 70px !important; width: 70px !important}
 .thumbnail img{position: absolute; width: initial; left: -1000%; right: -1000%; top: -1000%; bottom: -1000%; margin: auto}
