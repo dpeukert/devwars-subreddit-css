@@ -129,8 +129,8 @@
 	}
 	#sr-header-area {
 		background-color: $primary-bg;
-		.selected a{
-			color: $dw-red;
+		.dropdown.srdrop .selected {
+			color: $primary;
 		}
 		.drop-choices {
 			border: 1px solid $secondary;
@@ -151,6 +151,12 @@
 				color: $primary-bg;
 				background-color: $secondary;
 			}
+			.selected a{
+				color: $dw-red;
+			}
+		}
+		.sr-bar a {
+			color: $primary;
 		}
 	}
 }
