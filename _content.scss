@@ -44,15 +44,7 @@ ul#image-preview-list .description pre{color: $primary;}
 
 .thing p.title{padding-bottom: 2px}
 
-.expando-button{border-radius: 4px}
-
-/* PREPARED FOR THIS COMING OUT OF BETA - https://www.reddit.com/r/beta/comments/46ax3q/beta_update_20160217_media_previews/
-.content[role='main'] .thing .entry .expando-button{background-image: none !important; border-radius: 50%; background-color: $secondary-bg; transition: background-color .2s ease-out}
-.content[role='main'] .thing .entry .expando-button:hover{background-color: $dw-red;}
-.content[role='main'] .thing .entry .expando-button:before{width: 20px; height: 20px; font-size: 17px; line-height: 18px; display: block; text-align: center;}
-.content[role='main'] .thing .entry .expando-button.collapsed:before{content:"+";}
-.content[role='main'] .thing .entry .expando-button.expanded:before{content:"-";}
-*/
+.expando-button {background-image: url(%%expando-spritesheet%%) !important;}
 
 .tagline{line-height: 13px;}
 
