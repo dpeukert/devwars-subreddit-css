@@ -44,7 +44,9 @@ ul#image-preview-list .description pre{color: $primary;}
 
 .thing p.title{padding-bottom: 2px}
 
-.expando-button {background-image: url(%%expando-spritesheet%%) !important;}
+.expando-button {transition: opacity 0.5s; background-image: url(%%expando-spritesheet%%) !important;}
+
+.expando-button:hover {opacity: 0.75;}
 
 .tagline{line-height: 13px;}
 
