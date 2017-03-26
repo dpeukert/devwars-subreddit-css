@@ -1,8 +1,8 @@
-.header-icon-spreadsheet {
+%header-icon-spreadsheet {
 	background-image: url(%%spritesheet-header%%) !important;
 }
 
-.header-icon {
+%header-icon {
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 0;
@@ -10,7 +10,7 @@
 	height: 14px;
 }
 
-.thumbnail-overlay {
+%thumbnail-overlay {
 	position: absolute;
 	display: block;
 	width: 70px;

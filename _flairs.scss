@@ -2,7 +2,7 @@
 
 .flair {
   background: none;
-  border-radius: 0; 
+  border-radius: 0;
   border: 0;
   vertical-align: middle;
   &:before {
@@ -46,7 +46,7 @@
 .linkflair-suggestion, .linkflair-news, .linkflair-submission {
   .thumbnail {
     &:before {
-      @extend .thumbnail-overlay;
+      @extend %thumbnail-overlay;
     }
     &:not(.default):not(.self):before {
       background-color: rgba(0,0,0,0.74);
@@ -73,12 +73,12 @@
 .link:not(.linkflair), .search-result-link.no-linkflair {
   .thumbnail {
     &.default:before {
-      @extend .thumbnail-overlay;
+      @extend %thumbnail-overlay;
       content: "Link";
       font-size: 14px !important;
     }
     &.self:before {
-      @extend .thumbnail-overlay;
+      @extend %thumbnail-overlay;
       content:"Text post";
       font-size: 12px !important;
     }

@@ -34,8 +34,8 @@
 	.res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment{background-color: transparent !important}
 
 	.gearIcon::after {
-		@extend .header-icon-spreadsheet;
-		@extend .header-icon;
+		@extend %header-icon-spreadsheet;
+		@extend %header-icon;
 		background-position: -48px -0px;
 	}
 }

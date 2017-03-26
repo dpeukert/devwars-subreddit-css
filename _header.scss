@@ -103,10 +103,10 @@
 			}
 		}
 		#modmail, a.pref-lang, .logout a {
-			@extend .header-icon-spreadsheet;
+			@extend %header-icon-spreadsheet;
 		}
 		#modmail, a.pref-lang, .logout a, #mail, ul, li {
-			@extend .header-icon;
+			@extend %header-icon;
 		}
 		ul, li {
 			vertical-align: middle;

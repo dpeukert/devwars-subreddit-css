@@ -13,7 +13,7 @@
 .subscribe-button .remove, .res .res-fancy-toggle-button.remove, .combined-search-page .search-subscribe-button .remove, .combined-search-page .search-subscribe-button .remove:active{background: $dw-red; border-bottom-color: #7b0c32;}
 
 .users-online:before {
-  @extend .header-icon-spreadsheet;
+  @extend %header-icon-spreadsheet;
   background-position: -80px 0px;
 }
 
