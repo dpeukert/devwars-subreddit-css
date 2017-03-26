@@ -44,9 +44,26 @@ ul.image-preview-list .description pre{color: $primary;}
 
 .thing p.title{padding-bottom: 2px}
 
-.expando-button {transition: opacity 0.5s; background-image: url(%%expando-spritesheet%%) !important;}
-
-.expando-button:hover {opacity: 0.6;}
+.expando-button {
+	transition: opacity 0.5s;
+	background-image: url(%%expando-spritesheet%%) !important;
+	
+	&:hover {
+		opacity: 0.6;
+	}
+	
+	&.expanded {
+    	background-position: 0px 0px !important;
+	}
+	
+	&.collapsed.selftext {
+	    background-position: 0px -147px !important;
+	}
+	
+	&.collapsed.video {
+	    background-position: 0px -59px !important;
+	}
+}
 
 .tagline{line-height: 13px;}
 
