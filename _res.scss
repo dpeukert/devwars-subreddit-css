@@ -2,14 +2,14 @@
 	#NREFloat{top: 78px}
 
 	#RESShortcutsEditContainer{height: 18px}
-	#RESShortcutsSort, .res #RESShortcutsRight, .res #RESShortcutsLeft, .res #RESShortcutsAdd, .res #RESShortcutsTrash{line-height: 18px}
+	#RESShortcutsSort, #RESShortcutsRight, #RESShortcutsLeft, #RESShortcutsAdd, #RESShortcutsTrash{line-height: 18px}
 
 	#userbarToggle{background-color: transparent; border-radius: 0; color: white; border: 0; position: static; line-height: inherit;}
 	#header-bottom-right.res-userbar-toggle > .user {margin-left: 0px;}
 	.gearIcon::after{content: ""; text-shadow: none;}
 
 	#RESPrefsDropdown{position:fixed}
-	.commentarea .RES-keyNav-activeElement .md, .res .RES-keyNav-activeElement, .res .RES-keyNav-activeElement .md-container{background-color: transparent !important}
+	.commentarea .RES-keyNav-activeElement .md, .RES-keyNav-activeElement, .RES-keyNav-activeElement .md-container{background-color: transparent !important}
 
 	.usertext-edit .RESDialogSmall .md.RESDialogContents{background: none !important}
 
@@ -20,7 +20,7 @@
 	.entry{padding: 1px 6px 1px 1px;}
 	.RES-keyNav-activeElement{padding: 0 5px 0 0 !important;}
 
-	.res-commentBoxes .comment, .res .res-commentBoxes.res-commentBoxes-rounded .comment{border-radius: 0 !important;}
+	.res-commentBoxes .comment, .res-commentBoxes.res-commentBoxes-rounded .comment{border-radius: 0 !important;}
 
 	.res-commentBoxes .comment{border: 1px solid $secondary !important}
 
