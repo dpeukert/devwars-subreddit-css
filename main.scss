@@ -23,8 +23,8 @@ $header-height: 105px;
 // TODO: move the rest of the selectors to includes and use nesting
 
 body {
-	min-width: $min-width;
-	background: $darker-primary-bg;
+  min-width: $min-width;
+  background: $darker-primary-bg;
 }
 
 .morelink,
@@ -32,21 +32,22 @@ body {
 .tabmenu.formtab a,
 .tabmenu.formtab .selected a,
 input {
-	font-family: Arial, sans-serif !important;
+  font-family: Arial, sans-serif !important;
 }
 
 .titlebox .bottom .flair {
-	display: none !important;
+  display: none !important;
 }
-.titlebox form.toggle, .leavemoderator {
-	background: transparent;
+.titlebox form.toggle,
+.leavemoderator {
+  background: transparent;
 }
 html[lang^='hs'] .link.linkflair-submission {
-	display: none;
+  display: none;
 }
 textarea,
 input {
-	box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 button,
@@ -54,14 +55,14 @@ button,
 html input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-	border: outset 1px;
+  border: outset 1px;
 }
 button[disabled],
 ::-webkit-file-upload-button[disabled],
 html input[type='button'][disabled],
 input[type='reset'][disabled],
 input[type='submit'][disabled] {
-	background: #353535;
+  background: #353535;
 }
 
 .entry .buttons li.reported-stamp,
@@ -78,14 +79,14 @@ button,
 html input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-	background-color: $primary-bg;
+  background-color: $primary-bg;
 }
 .res #RESShortcutsSort,
 .res #RESShortcutsRight,
 .res #RESShortcutsLeft,
 .res #RESShortcutsAdd,
 .res #RESShortcutsTrash {
-	color: $primary-bg;
+  color: $primary-bg;
 }
 
 .thing .entry .expando .md,
@@ -104,7 +105,7 @@ button:active,
 html input[type='button']:active,
 input[type='reset']:active,
 input[type='submit']:active {
-	background-color: $secondary-bg;
+  background-color: $secondary-bg;
 }
 
 body,
@@ -140,7 +141,7 @@ button,
 html input[type='button'],
 input[type='reset'],
 input[type='submit'] {
-	color: $primary;
+  color: $primary;
 }
 
 .side form.flairtoggle,
@@ -190,7 +191,7 @@ button[disabled],
 html input[type='button'][disabled],
 input[type='reset'][disabled],
 input[type='submit'][disabled] {
-	color: $secondary;
+  color: $secondary;
 }
 
 .md hr,
@@ -200,7 +201,7 @@ input[type='submit'][disabled] {
 .res #RESShortcutsLeft,
 .res #RESShortcutsAdd,
 .res #RESShortcutsTrash {
-	background-color: $secondary;
+  background-color: $secondary;
 }
 .sidecontentbox .content,
 .usertext-edit textarea,
@@ -209,24 +210,24 @@ input[type='text'],
 input[type='url'],
 .roundfield input[type='text'],
 .roundfield input[type='url'] {
-	border: 1px solid $secondary;
+  border: 1px solid $secondary;
 }
 #sr-header-area {
-	border-bottom: 1px solid $secondary;
+  border-bottom: 1px solid $secondary;
 }
 .combined-search-page .search-result-group-header {
-	border-bottom: 2px solid $secondary;
+  border-bottom: 2px solid $secondary;
 }
 .md blockquote {
-	border-left: 2px solid $secondary;
+  border-left: 2px solid $secondary;
 }
 .res .RES-keyNav-activeElement,
 .flairselector li.selected {
-	border: 1px dashed $secondary;
+  border: 1px dashed $secondary;
 }
 .comment .child,
 .comment .showreplies {
-	border-left: 1px dotted $secondary;
+  border-left: 1px dotted $secondary;
 }
 
 a,
@@ -248,36 +249,36 @@ h2,
 .combined-search-page .search-result :link > mark,
 .search-result :visited,
 .search-result :visited > mark {
-	color: $links;
+  color: $links;
 }
 .infobar,
 .content.submit .info-notice,
 .comment-visits-box,
 .res .RESDialogSmall.livePreview {
-	border: 1px solid $links;
+  border: 1px solid $links;
 }
 .res .RESDialogSmall.livePreview h3 {
-	border-bottom: 1px solid $links;
+  border-bottom: 1px solid $links;
 }
 
 .link .score.dislikes,
 .error {
-	color: $dw-red;
+  color: $dw-red;
 }
 
 .link .score.likes,
 .tagline .submitter {
-	color: $dw-blue;
+  color: $dw-blue;
 }
 .flat-vert.title {
-	border-bottom: 1px solid $dw-blue;
+  border-bottom: 1px solid $dw-blue;
 }
 .morelink,
 .side .usertext .md p:nth-last-of-type(1) a,
 .side .usertext .md p:nth-last-of-type(2) a,
 .nextprev a,
 .usertable > .toggle {
-	background: $dw-blue !important;
+  background: $dw-blue !important;
 }
 
 @import 'header';

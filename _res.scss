@@ -1,114 +1,114 @@
 @mixin comment() {
-	background-color: transparent !important;
+  background-color: transparent !important;
 }
 
 .res {
-	#NREFloat {
-		top: 78px;
-	}
+  #NREFloat {
+    top: 78px;
+  }
 
-	#RESShortcutsEditContainer {
-		height: 18px;
-	}
-	#RESShortcutsSort,
-	#RESShortcutsRight,
-	#RESShortcutsLeft,
-	#RESShortcutsAdd,
-	#RESShortcutsTrash {
-		line-height: 18px;
-	}
+  #RESShortcutsEditContainer {
+    height: 18px;
+  }
+  #RESShortcutsSort,
+  #RESShortcutsRight,
+  #RESShortcutsLeft,
+  #RESShortcutsAdd,
+  #RESShortcutsTrash {
+    line-height: 18px;
+  }
 
-	#userbarToggle {
-		background-color: transparent;
-		border-radius: 0;
-		color: white;
-		border: 0;
-		position: static;
-		line-height: inherit;
-	}
-	#header-bottom-right.res-userbar-toggle > .user {
-		margin-left: 0px;
-	}
-	.gearIcon::after {
-		content: '';
-		text-shadow: none;
-	}
+  #userbarToggle {
+    background-color: transparent;
+    border-radius: 0;
+    color: white;
+    border: 0;
+    position: static;
+    line-height: inherit;
+  }
+  #header-bottom-right.res-userbar-toggle > .user {
+    margin-left: 0px;
+  }
+  .gearIcon::after {
+    content: '';
+    text-shadow: none;
+  }
 
-	#RESPrefsDropdown {
-		position: fixed;
-	}
-	.commentarea .RES-keyNav-activeElement .md,
-	.RES-keyNav-activeElement,
-	.RES-keyNav-activeElement .md-container,
-	.RES-keyNav-activeElement .RES-keyNav-activeElement .md-container {
-		background-color: transparent !important;
-	}
+  #RESPrefsDropdown {
+    position: fixed;
+  }
+  .commentarea .RES-keyNav-activeElement .md,
+  .RES-keyNav-activeElement,
+  .RES-keyNav-activeElement .md-container,
+  .RES-keyNav-activeElement .RES-keyNav-activeElement .md-container {
+    background-color: transparent !important;
+  }
 
-	.usertext-edit .RESDialogSmall .md.RESDialogContents {
-		background: none !important;
-	}
+  .usertext-edit .RESDialogSmall .md.RESDialogContents {
+    background: none !important;
+  }
 
-	.RESDialogSmall.livePreview h3 {
-		border-bottom-left-radius: 0;
-		border-bottom-right-radius: 0;
-	}
+  .RESDialogSmall.livePreview h3 {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 
-	.RESSubscriptionButton {
-		line-height: 12px;
-		height: 12px;
-		vertical-align: bottom;
-	}
+  .RESSubscriptionButton {
+    line-height: 12px;
+    height: 12px;
+    vertical-align: bottom;
+  }
 
-	.entry {
-		padding: 1px 6px 1px 1px;
-	}
-	.RES-keyNav-activeElement {
-		padding: 0 5px 0 0 !important;
-	}
+  .entry {
+    padding: 1px 6px 1px 1px;
+  }
+  .RES-keyNav-activeElement {
+    padding: 0 5px 0 0 !important;
+  }
 
-	.res-commentBoxes .comment,
-	.res-commentBoxes.res-commentBoxes-rounded .comment {
-		border-radius: 0 !important;
-	}
+  .res-commentBoxes .comment,
+  .res-commentBoxes.res-commentBoxes-rounded .comment {
+    border-radius: 0 !important;
+  }
 
-	.res-commentBoxes {
-		.comment {
-			@include comment();
-			.comment {
-				@include comment();
-				.comment {
-					@include comment();
-					.comment {
-						@include comment();
-						.comment {
-							@include comment();
-							.comment {
-								@include comment();
-								.comment {
-									@include comment();
-									.comment {
-										@include comment();
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+  .res-commentBoxes {
+    .comment {
+      @include comment();
+      .comment {
+        @include comment();
+        .comment {
+          @include comment();
+          .comment {
+            @include comment();
+            .comment {
+              @include comment();
+              .comment {
+                @include comment();
+                .comment {
+                  @include comment();
+                  .comment {
+                    @include comment();
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
-	.gearIcon::after {
-		@extend %header-icon-spreadsheet;
-		@extend %header-icon;
-		background-position: -48px -0px;
-	}
+  .gearIcon::after {
+    @extend %header-icon-spreadsheet;
+    @extend %header-icon;
+    background-position: -48px -0px;
+  }
 
-	.res-sr-style-toggle {
-		background: transparent;
-	}
+  .res-sr-style-toggle {
+    background: transparent;
+  }
 
-	.res-voteEnhancements-highlightScores span.score {
-		color: #888;
-	}
+  .res-voteEnhancements-highlightScores span.score {
+    color: #888;
+  }
 }
