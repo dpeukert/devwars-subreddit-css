@@ -1,70 +1,251 @@
-.side{background: $darker-primary-bg;}
-.side, .side .usertext p:nth-of-type(1){min-width: $sidebar-width}
-#search input[type='text']{border: 0; color: $primary !important}
-#search input[type='text']::-webkit-input-placeholder{color: $secondary}
-#search input[type='text']::-moz-placeholder{color: $secondary}
-#search input[type='text']:-ms-input-placeholder{color: $secondary}
-#search input[type='text']:-moz-placeholder{color: $secondary}
-#searchexpando{background:none; border: 0; padding: 4px 10px}
-#searchexpando p{margin-bottom: 0px}
-
-.subscribe-button .add, .subscribe-button .remove, .res .res-fancy-toggle-button, .combined-search-page .search-subscribe-button .add, .combined-search-page .search-subscribe-button .remove{border: 0; border-bottom-width: 3px; border-bottom-style: solid; border-radius: 0; font-weight: normal;}
-.subscribe-button .add, .res .res-fancy-toggle-button, .combined-search-page .search-subscribe-button .add, .combined-search-page .search-subscribe-button .add:active{background: #1CC11A; border-bottom-color: #0C7B1F;}
-.subscribe-button .remove, .res .res-fancy-toggle-button.remove, .combined-search-page .search-subscribe-button .remove, .combined-search-page .search-subscribe-button .remove:active{background: $dw-red; border-bottom-color: #7b0c32;}
-
-.users-online:before {
-  @extend %header-icon-spreadsheet;
-  background-position: -80px 0px;
+.side {
+	background: $darker-primary-bg;
+}
+.side,
+.side .usertext p:nth-of-type(1) {
+	min-width: $sidebar-width;
+}
+#search input[type='text'] {
+	border: 0;
+	color: $primary !important;
+}
+#search input[type='text']::-webkit-input-placeholder {
+	color: $secondary;
+}
+#search input[type='text']::-moz-placeholder {
+	color: $secondary;
+}
+#search input[type='text']:-ms-input-placeholder {
+	color: $secondary;
+}
+#search input[type='text']:-moz-placeholder {
+	color: $secondary;
+}
+#searchexpando {
+	background: none;
+	border: 0;
+	padding: 4px 10px;
+}
+#searchexpando p {
+	margin-bottom: 0px;
 }
 
-.multi-selector{top: 547px !important; z-index: 98}
-.res .multi-selector{top: 300px !important;}
+.subscribe-button .add,
+.subscribe-button .remove,
+.res .res-fancy-toggle-button,
+.combined-search-page .search-subscribe-button .add,
+.combined-search-page .search-subscribe-button .remove {
+	border: 0;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-radius: 0;
+	font-weight: normal;
+}
+.subscribe-button .add,
+.res .res-fancy-toggle-button,
+.combined-search-page .search-subscribe-button .add,
+.combined-search-page .search-subscribe-button .add:active {
+	background: #1cc11a;
+	border-bottom-color: #0c7b1f;
+}
+.subscribe-button .remove,
+.res .res-fancy-toggle-button.remove,
+.combined-search-page .search-subscribe-button .remove,
+.combined-search-page .search-subscribe-button .remove:active {
+	background: $dw-red;
+	border-bottom-color: #7b0c32;
+}
 
-.morelink{border: 0; border-bottom: 5px solid #015276; padding: 0 3px 2px 3px; font-weight: 300; letter-spacing: 1px; color: white; transition: border-color .2s ease-out, background .2s ease-out;}
-.morelink a{color: white}
-.morelink:hover{background: $dw-red !important; border-color: #7b0c32}
+.users-online:before {
+	@extend %header-icon-spreadsheet;
+	background-position: -80px 0px;
+}
 
-.morelink .nub{display: none !important}
+.multi-selector {
+	top: 547px !important;
+	z-index: 98;
+}
+.res .multi-selector {
+	top: 300px !important;
+}
 
-.flairselector.drop-choices.active{box-shadow: none; width: initial!important; position: absolute; display: inline-block; top: initial !important; left: initial !important; margin-left: -24px;}
-.flairselector ul{width: initial !important;}
-.flairselector li{border: 0; padding: 4px 7px;}
-.flairselector li.selected{padding: 3px 6px;}
-.flairselector li:hover{background-color: transparent;}
-.flairselector li:not(.selected):hover{border: 0}
-.flairselector li:hover a{text-decoration: underline;}
-.flairselector h2{background: none}
-.flairsample-left{text-align: center !important}
+.morelink {
+	border: 0;
+	border-bottom: 5px solid #015276;
+	padding: 0 3px 2px 3px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	color: white;
+	transition: border-color 0.2s ease-out, background 0.2s ease-out;
+}
+.morelink a {
+	color: white;
+}
+.morelink:hover {
+	background: $dw-red !important;
+	border-color: #7b0c32;
+}
 
-a[href='#linebreak']{display: block}
+.morelink .nub {
+	display: none !important;
+}
 
-.side .usertext .md p:nth-of-type(1){position: fixed; z-index: 100; height:28px; width: 330px; top:40px; right: 0; margin: 0; font-size: 14px; line-height: 1.2em; text-align: right; padding-right: 20px}
-.side .usertext .md p:nth-of-type(1) a[href*='twitch.tv']{letter-spacing: 1px; color: $dw-red; font-size: 25px; line-height: 27px}
-.side .usertext .md p:nth-of-type(1) a[href*='twitch.tv']:hover{text-shadow: 0 0 50px white}
+.flairselector.drop-choices.active {
+	box-shadow: none;
+	width: initial !important;
+	position: absolute;
+	display: inline-block;
+	top: initial !important;
+	left: initial !important;
+	margin-left: -24px;
+}
+.flairselector ul {
+	width: initial !important;
+}
+.flairselector li {
+	border: 0;
+	padding: 4px 7px;
+}
+.flairselector li.selected {
+	padding: 3px 6px;
+}
+.flairselector li:hover {
+	background-color: transparent;
+}
+.flairselector li:not(.selected):hover {
+	border: 0;
+}
+.flairselector li:hover a {
+	text-decoration: underline;
+}
+.flairselector h2 {
+	background: none;
+}
+.flairsample-left {
+	text-align: center !important;
+}
 
-.side .usertext .md p:nth-last-of-type(3){display: flex; justify-content: space-between; width: 70%; margin: 10px auto;}
-.side .usertext .md p:nth-last-of-type(3) a{width: 32px; height: 32px; background-image: url(%%social-icons%%); font-size: 0; transition: background-image 0.5s;}
-.side .usertext .md p:nth-last-of-type(3) a:hover{background-image: url(%%social-icons-hover%%);}
+a[href='#linebreak'] {
+	display: block;
+}
 
-.side .usertext .md p:nth-last-of-type(3) a:nth-of-type(2){background-position: -32px 0px;}
-.side .usertext .md p:nth-last-of-type(3) a:nth-of-type(3){background-position: -64px 0px;}
-.side .usertext .md p:nth-last-of-type(3) a:nth-of-type(4){background-position: -96px 0px;}
+.side .usertext .md p:nth-of-type(1) {
+	position: fixed;
+	z-index: 100;
+	height: 28px;
+	width: 330px;
+	top: 40px;
+	right: 0;
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.2em;
+	text-align: right;
+	padding-right: 20px;
+}
+.side .usertext .md p:nth-of-type(1) a[href*='twitch.tv'] {
+	letter-spacing: 1px;
+	color: $dw-red;
+	font-size: 25px;
+	line-height: 27px;
+}
+.side .usertext .md p:nth-of-type(1) a[href*='twitch.tv']:hover {
+	text-shadow: 0 0 50px white;
+}
 
-.side .usertext .md p:nth-last-of-type(1), .side .usertext .md p:nth-last-of-type(2){text-align: center; margin: 9px 0}
-.side .usertext .md p:nth-last-of-type(1) a, .side .usertext .md p:nth-last-of-type(2) a, .nextprev a, .usertable > .toggle{display: inline-block; border: 0; border-bottom: 3px solid #015276; color: #FFF; padding: 5px; border-radius: 0; transition: border-color .2s ease-out, background .2s ease-out;}
-.side .usertext .md p:nth-last-of-type(1) a:hover, .side .usertext .md p:nth-last-of-type(2) a:hover, .nextprev a:hover, .usertable > .toggle:hover{background: $dw-red !important; border: 0; border-bottom: 3px solid #7b0c32}
+.side .usertext .md p:nth-last-of-type(3) {
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+	margin: 10px auto;
+}
+.side .usertext .md p:nth-last-of-type(3) a {
+	width: 32px;
+	height: 32px;
+	background-image: url(%%social-icons%%);
+	font-size: 0;
+	transition: background-image 0.5s;
+}
+.side .usertext .md p:nth-last-of-type(3) a:hover {
+	background-image: url(%%social-icons-hover%%);
+}
 
-.side .usertext .md p:nth-last-of-type(2), html[lang^='hs'] .side .usertext .md p:nth-last-of-type(1){display: block}
-html[lang^='hs'] .side .usertext .md p:nth-last-of-type(2), .side .usertext .md p:nth-last-of-type(1){display: none}
+.side .usertext .md p:nth-last-of-type(3) a:nth-of-type(2) {
+	background-position: -32px 0px;
+}
+.side .usertext .md p:nth-last-of-type(3) a:nth-of-type(3) {
+	background-position: -64px 0px;
+}
+.side .usertext .md p:nth-last-of-type(3) a:nth-of-type(4) {
+	background-position: -96px 0px;
+}
 
-.linkinfo{background:none; border:0; text-align: center}
-.linkinfo .shortlink input{display:block; margin: 0 auto; background: transparent; border: none; width: auto}
+.side .usertext .md p:nth-last-of-type(1),
+.side .usertext .md p:nth-last-of-type(2) {
+	text-align: center;
+	margin: 9px 0;
+}
+.side .usertext .md p:nth-last-of-type(1) a,
+.side .usertext .md p:nth-last-of-type(2) a,
+.nextprev a,
+.usertable > .toggle {
+	display: inline-block;
+	border: 0;
+	border-bottom: 3px solid #015276;
+	color: #fff;
+	padding: 5px;
+	border-radius: 0;
+	transition: border-color 0.2s ease-out, background 0.2s ease-out;
+}
+.side .usertext .md p:nth-last-of-type(1) a:hover,
+.side .usertext .md p:nth-last-of-type(2) a:hover,
+.nextprev a:hover,
+.usertable > .toggle:hover {
+	background: $dw-red !important;
+	border: 0;
+	border-bottom: 3px solid #7b0c32;
+}
 
-.side form.flairtoggle, .side .leavemoderator, .side .icon-menu li a, .side .sidebox .spacer{background-color: transparent}
+.side .usertext .md p:nth-last-of-type(2),
+html[lang^='hs'] .side .usertext .md p:nth-last-of-type(1) {
+	display: block;
+}
+html[lang^='hs'] .side .usertext .md p:nth-last-of-type(2),
+.side .usertext .md p:nth-last-of-type(1) {
+	display: none;
+}
 
+.linkinfo {
+	background: none;
+	border: 0;
+	text-align: center;
+}
+.linkinfo .shortlink input {
+	display: block;
+	margin: 0 auto;
+	background: transparent;
+	border: none;
+	width: auto;
+}
+
+.side form.flairtoggle,
+.side .leavemoderator,
+.side .icon-menu li a,
+.side .sidebox .spacer {
+	background-color: transparent;
+}
 
 /* MOD LIST */
 
-.spacer li a.author{vertical-align: middle}
-.spacer:nth-last-of-type(3) li{margin: 0 0 3px 0}
-.spacer:nth-last-of-type(3) li:nth-last-of-type(1), .spacer:nth-last-of-type(3) li:nth-last-of-type(2){margin: 0}
+.spacer li a.author {
+	vertical-align: middle;
+}
+.spacer .md p {
+	color: #888;
+}
+.spacer:nth-last-of-type(3) li {
+	margin: 0 0 3px 0;
+}
+.spacer:nth-last-of-type(3) li:nth-last-of-type(1),
+.spacer:nth-last-of-type(3) li:nth-last-of-type(2) {
+	margin: 0;
+}

@@ -1,86 +1,98 @@
 // User flair
 
 .flair {
-  background: none;
-  border-radius: 0;
-  border: 0;
-  vertical-align: middle;
-  &:before {
-    content: "";
-    border: none !important;
-    top:20px;
-    padding:0px;
-    background: url(%%spritesheet%%);
-    display:inline-block;
-    vertical-align: middle;
-  }
+	background: none;
+	border-radius: 0;
+	border: 0;
+	vertical-align: middle;
+	&:before {
+		content: '';
+		border: none !important;
+		top: 20px;
+		padding: 0px;
+		background: url(%%spritesheet%%);
+		display: inline-block;
+		vertical-align: middle;
+	}
 }
 
-.flair-css, .flair-css:before, .flair-html, .flair-html:before, .flair-js, .flair-staff {
-  width: 14px;
-  height: 16px;
+.flair-css,
+.flair-css:before,
+.flair-html,
+.flair-html:before,
+.flair-js,
+.flair-staff {
+	width: 14px;
+	height: 16px;
 }
 .flair-css:before {
-  background-position: -2px -2px;
+	background-position: -2px -2px;
 }
 .flair-html:before {
-  background-position: -20px -2px;
+	background-position: -20px -2px;
 }
 .flair-js:before {
-  width: 15px; height: 16px; background-position: -38px -2px;
+	width: 15px;
+	height: 16px;
+	background-position: -38px -2px;
 }
 .flair-staff:before {
-  width: 16px; height: 16px; background-position: -57px -2px;
+	width: 16px;
+	height: 16px;
+	background-position: -57px -2px;
 }
-
 
 // Link flairs + fake link flairs
 
 .linkflairlabel {
-  border-radius: 0;
-  border: 0;
-  vertical-align: middle;
-  padding: 2px 3px;
+	border-radius: 0;
+	border: 0;
+	vertical-align: middle;
+	padding: 2px 3px;
 }
 
-.linkflair-suggestion, .linkflair-news, .linkflair-submission {
-  .thumbnail {
-    &:before {
-      @extend %thumbnail-overlay;
-    }
-    &:not(.default):not(.self):before {
-      background-color: rgba(0,0,0,0.74);
-    }
-    & ~ .entry .linkflairlabel, & ~ div header .linkflairlabel {
-      display: none;
-    }
-  }
+.linkflair-suggestion,
+.linkflair-news,
+.linkflair-submission {
+	.thumbnail {
+		&:before {
+			@extend %thumbnail-overlay;
+		}
+		&:not(.default):not(.self):before {
+			background-color: rgba(0, 0, 0, 0.74);
+		}
+		& ~ .entry .linkflairlabel,
+		& ~ div header .linkflairlabel {
+			display: none;
+		}
+	}
 }
 
 .linkflair-suggestion .thumbnail:before {
-  content: "Suggestion";
-  font-size: 11px !important;
+	content: 'Suggestion';
+	font-size: 11px !important;
 }
 .linkflair-news .thumbnail:before {
-  content: "News";
-  font-size: 16px !important;
+	content: 'News';
+	font-size: 16px !important;
 }
 .linkflair-submission .thumbnail:before {
-  content: "Submission";
-  font-size: 11px !important;
+	content: 'Submission';
+	font-size: 11px !important;
 }
 
-.link:not(.linkflair), .search-result-link.no-linkflair {
-  .thumbnail {
-    &.default:before {
-      @extend %thumbnail-overlay;
-      content: "Link";
-      font-size: 14px !important;
-    }
-    &.self:before {
-      @extend %thumbnail-overlay;
-      content:"Text post";
-      font-size: 12px !important;
-    }
-  }
+.link:not(.linkflair),
+.search-result-link.no-linkflair {
+	.thumbnail {
+		&.default:before {
+			@extend %thumbnail-overlay;
+			content: 'Link';
+			font-size: 14px !important;
+		}
+		&.self:before {
+			@extend %thumbnail-overlay;
+			content: 'Text post';
+			font-size: 12px !important;
+		}
+	}
 }

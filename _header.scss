@@ -5,7 +5,7 @@
 	width: 100%;
 	top: 0;
 	border-width: 0 0 5px 0;
-	border-image: linear-gradient(to right,$dw-blue,$dw-red) 100% 1;
+	border-image: linear-gradient(to right, $dw-blue, $dw-red) 100% 1;
 	#header-bottom-left {
 		height: $header-height - 5 - 19;
 		background-color: $primary-bg;
@@ -17,7 +17,8 @@
 			padding: 0;
 			width: 1px;
 			height: 1px;
-			&:before, &:after {
+			&:before,
+			&:after {
 				position: fixed;
 				top: 0;
 				left: 0;
@@ -37,7 +38,8 @@
 				width: $header-height - 5 - 19 - 20;
 				margin: 10px;
 				background-image: url(%%logo%%);
-				background-size: ($header-height - 5 - 19 - 20) ($header-height - 5 - 19 - 20);
+				background-size: ($header-height - 5 - 19 - 20) ($header-height -
+							5 - 19 - 20);
 				background-position: 0 0;
 				background-repeat: no-repeat;
 				transition: -webkit-transform 0.5s, transform 0.5s;
@@ -90,25 +92,33 @@
 					opacity: 0.9;
 				}
 				&:after {
-					content: "β";
+					content: 'β';
 					font-size: 11px;
 					font-weight: 600;
 				}
 			}
 			&:after {
-				content: "|";
+				content: '|';
 				color: $secondary;
 				margin: 0 0.7ex;
 				cursor: default;
 			}
 		}
-		#modmail, a.pref-lang, .logout a {
+		#modmail,
+		a.pref-lang,
+		.logout a {
 			@extend %header-icon-spreadsheet;
 		}
-		#modmail, a.pref-lang, .logout a, #mail, ul, li {
+		#modmail,
+		a.pref-lang,
+		.logout a,
+		#mail,
+		ul,
+		li {
 			@extend %header-icon;
 		}
-		ul, li {
+		ul,
+		li {
 			vertical-align: middle;
 			display: inline-block;
 		}
@@ -149,7 +159,7 @@
 		.sr-bar a {
 			color: $primary;
 		}
-		.sr-list .selected a{
+		.sr-list .selected a {
 			color: $dw-red;
 		}
 		#sr-more-link {
