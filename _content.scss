@@ -90,7 +90,7 @@ ul.image-preview-list .description pre{color: $primary;}
 .usertext.grayed .usertext-body{background-color: #2F2F2F} /* deleted comment highlight */
 .usertext.border .usertext-body{background-color: #2D2D22} /* linked comment highlight */
 .comment.new-comment .usertext-body{background-color: #353535}  /* new comment highlight */
-.comment .comment{background-color: $primary-bg !important; border-color: $secondary !important;}
+.res-commentBoxes .comment .comment .comment, .res-commentBoxes .comment .comment .comment .comment .comment, .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment, .res-commentBoxes .comment .comment .comment .comment .comment .comment .comment .comment .comment {background-color: $primary-bg !important; border-color: $secondary !important;}
 
 .new-comment .md :not(pre)>code, .link .md :not(pre)>code, .usertext.border .md :not(pre)>code, .new-comment .md pre, .link .md pre, .usertext.border .md pre, .md code {background-color: transparent; border-radius: 0;}
 
