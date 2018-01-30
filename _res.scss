@@ -39,9 +39,11 @@
   }
   .commentarea .RES-keyNav-activeElement .md,
   .RES-keyNav-activeElement,
+  .RES-keyNav-activeElement.entry.res-selected,
+  .RES-keyNav-activeElement.entry.res-selected .md-container,
   .RES-keyNav-activeElement .md-container,
   .RES-keyNav-activeElement .RES-keyNav-activeElement .md-container {
-    background-color: transparent !important;
+    @include comment();
   }
 
   .usertext-edit .RESDialogSmall .md.RESDialogContents {
