@@ -6,17 +6,22 @@
   border: 0;
   vertical-align: middle;
   &:before {
-    content: "";
+    content: '';
     border: none !important;
-    top:20px;
-    padding:0px;
+    top: 20px;
+    padding: 0px;
     background: url(%%spritesheet%%);
-    display:inline-block;
+    display: inline-block;
     vertical-align: middle;
   }
 }
 
-.flair-css, .flair-css:before, .flair-html, .flair-html:before, .flair-js, .flair-staff {
+.flair-css,
+.flair-css:before,
+.flair-html,
+.flair-html:before,
+.flair-js,
+.flair-staff {
   width: 14px;
   height: 16px;
 }
@@ -27,12 +32,15 @@
   background-position: -20px -2px;
 }
 .flair-js:before {
-  width: 15px; height: 16px; background-position: -38px -2px;
+  width: 15px;
+  height: 16px;
+  background-position: -38px -2px;
 }
 .flair-staff:before {
-  width: 16px; height: 16px; background-position: -57px -2px;
+  width: 16px;
+  height: 16px;
+  background-position: -57px -2px;
 }
-
 
 // Link flairs + fake link flairs
 
@@ -43,43 +51,47 @@
   padding: 2px 3px;
 }
 
-.linkflair-suggestion, .linkflair-news, .linkflair-submission {
+.linkflair-suggestion,
+.linkflair-news,
+.linkflair-submission {
   .thumbnail {
     &:before {
       @extend %thumbnail-overlay;
     }
     &:not(.default):not(.self):before {
-      background-color: rgba(0,0,0,0.74);
+      background-color: rgba(0, 0, 0, 0.74);
     }
-    & ~ .entry .linkflairlabel, & ~ div header .linkflairlabel {
+    & ~ .entry .linkflairlabel,
+    & ~ div header .linkflairlabel {
       display: none;
     }
   }
 }
 
 .linkflair-suggestion .thumbnail:before {
-  content: "Suggestion";
+  content: 'Suggestion';
   font-size: 11px !important;
 }
 .linkflair-news .thumbnail:before {
-  content: "News";
+  content: 'News';
   font-size: 16px !important;
 }
 .linkflair-submission .thumbnail:before {
-  content: "Submission";
+  content: 'Submission';
   font-size: 11px !important;
 }
 
-.link:not(.linkflair), .search-result-link.no-linkflair {
+.link:not(.linkflair),
+.search-result-link.no-linkflair {
   .thumbnail {
     &.default:before {
       @extend %thumbnail-overlay;
-      content: "Link";
+      content: 'Link';
       font-size: 14px !important;
     }
     &.self:before {
       @extend %thumbnail-overlay;
-      content:"Text post";
+      content: 'Text post';
       font-size: 12px !important;
     }
   }

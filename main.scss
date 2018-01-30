@@ -4,7 +4,7 @@
 
 // Colors
 $primary-bg: #191919;
-$darker-primary-bg: darken($primary-bg,2.75%);
+$darker-primary-bg: darken($primary-bg, 2.75%);
 $secondary-bg: #2a2a2a;
 $primary: #d3d3d3;
 $secondary: #969696;
@@ -14,7 +14,7 @@ $dw-blue: #03a9f4;
 $stickies: #ff8b60;
 
 // Dimensions
-$min-width: 1160px;
+$min-width: 560px;
 $sidebar-width: 300px;
 $header-height: 105px;
 
@@ -22,45 +22,267 @@ $header-height: 105px;
 
 // TODO: move the rest of the selectors to includes and use nesting
 
-body{min-width: $min-width; background: $darker-primary-bg;}
+body {
+  min-width: $min-width;
+  background: $darker-primary-bg;
+}
 
-.morelink, .side .usertext p:nth-of-type(1), .tabmenu.formtab a, .tabmenu.formtab .selected a, input{font-family: Arial, sans-serif !important}
+.morelink,
+.side .usertext p:nth-of-type(1),
+.tabmenu.formtab a,
+.tabmenu.formtab .selected a,
+input {
+  font-family: Arial, sans-serif !important;
+}
 
-.titlebox .bottom .flair{display: none !important}
-html[lang^='hs'] .link.linkflair-submission{display: none}
-textarea, input{box-shadow: none !important}
+.titlebox .bottom .flair {
+  display: none !important;
+}
+.titlebox form.toggle,
+.leavemoderator {
+  background: transparent;
+}
+html[lang^='hs'] .link.linkflair-submission {
+  display: none;
+}
+textarea,
+input {
+  box-shadow: none !important;
+}
 
-button, ::-webkit-file-upload-button, html input[type="button"], input[type="reset"], input[type="submit"]{border: outset 1px}
-button[disabled], ::-webkit-file-upload-button[disabled], html input[type="button"][disabled], input[type="reset"][disabled], input[type="submit"][disabled]{background: #353535;}
+button,
+::-webkit-file-upload-button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  border: outset 1px;
+}
+button[disabled],
+::-webkit-file-upload-button[disabled],
+html input[type='button'][disabled],
+input[type='reset'][disabled],
+input[type='submit'][disabled] {
+  background: #353535;
+}
 
-.entry .buttons li.reported-stamp, #report-action-form, #report-action-form input[name='other_reason'], .usertext-edit textarea, .submit.content textarea,  input[type='text'], input[type='url'], input[type='password'], .flairselector.drop-choices.active, button, ::-webkit-file-upload-button, html input[type="button"], input[type="reset"], input[type="submit"]{background-color: $primary-bg;}
-.res #RESShortcutsSort, .res #RESShortcutsRight, .res #RESShortcutsLeft, .res #RESShortcutsAdd, .res #RESShortcutsTrash{color: $primary-bg;}
+.entry .buttons li.reported-stamp,
+#report-action-form,
+#report-action-form input[name='other_reason'],
+.usertext-edit textarea,
+.submit.content textarea,
+input[type='text'],
+input[type='url'],
+input[type='password'],
+.flairselector.drop-choices.active,
+button,
+::-webkit-file-upload-button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  background-color: $primary-bg;
+}
+.res #RESShortcutsSort,
+.res #RESShortcutsRight,
+.res #RESShortcutsLeft,
+.res #RESShortcutsAdd,
+.res #RESShortcutsTrash {
+  color: $primary-bg;
+}
 
-.thing .entry .expando .md, .infobar, .content.submit .info-notice, .roundfield, .linefield, .linefield.mobile, .comment-visits-box, .res .RESDialogSmall.livePreview, .res .RESDialogSmall.livePreview h3, #search input[type='text'], .linkflairlabel, button:active, ::-webkit-file-upload-button:active, html input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active{background-color: $secondary-bg;}
+.thing .entry .expando .md,
+.infobar,
+.content.submit .info-notice,
+.roundfield,
+.linefield,
+.linefield.mobile,
+.comment-visits-box,
+.res .RESDialogSmall.livePreview,
+.res .RESDialogSmall.livePreview h3,
+#search input[type='text'],
+.linkflairlabel,
+button:active,
+::-webkit-file-upload-button:active,
+html input[type='button']:active,
+input[type='reset']:active,
+input[type='submit']:active {
+  background-color: $secondary-bg;
+}
 
-body, .md, .usertext .md, .thing .title, #header-bottom-right, #header-bottom-right a, .side .titlebox h1 a, .linefield .title, .flair, #header #header-img:before, .wikirevisionlisting .generic-table, #header .tabmenu li a, .linkflairlabel, .gold-accent.comment-visits-box, .usertext-edit textarea, .submit.content textarea, input[type='text'], input[type='url'], input[type='password'], .linkinfo .shortlink input, .res .RESDialogSmall.livePreview h3, .combined-search-page .search-result a.search-title, #report-action-form input[name='other_reason'], .footer .flat-vert.title, .reddit-infobar:not(.cookie-infobar) .md, .wiki-page .wikititle, .fancy-settings h1 strong, .message.recipient>.entry, button, ::-webkit-file-upload-button, html input[type="button"], input[type="reset"], input[type="submit"]{color: $primary;}
+body,
+.md,
+.usertext .md,
+.thing .title,
+#header-bottom-right,
+#header-bottom-right a,
+.side .titlebox h1 a,
+.linefield .title,
+.flair,
+#header #header-img:before,
+.wikirevisionlisting .generic-table,
+#header .tabmenu li a,
+.linkflairlabel,
+.gold-accent.comment-visits-box,
+.usertext-edit textarea,
+.submit.content textarea,
+input[type='text'],
+input[type='url'],
+input[type='password'],
+.linkinfo .shortlink input,
+.res .RESDialogSmall.livePreview h3,
+.combined-search-page .search-result a.search-title,
+#report-action-form input[name='other_reason'],
+.footer .flat-vert.title,
+.reddit-infobar:not(.cookie-infobar) .md,
+.wiki-page .wikititle,
+.fancy-settings h1 strong,
+.message.recipient > .entry,
+button,
+::-webkit-file-upload-button,
+html input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  color: $primary;
+}
 
-.side form.flairtoggle, .side .leavemoderator, .side .titlebox .bottom, .side .sidecontentbox .title h1, .side .sidebox .subtitle, .side .sidecontentbox .more a, .side span.score, .entry .buttons li a, .res .redditSingleClick, .tagline, .domain, .domain a, .spam .domain, .spam .domain a, #header-bottom-right .userkarma, #header-bottom-right .separator, .bottommenu, .debuginfo, .debuginfo .icon, .separator, #header #header-img:after, .link .score.unvoted, .sponsored-tagline, .res span.score, .md blockquote, .md del, .combined-search-page .search-result .search-result-meta, .combined-search-page .search-result a.search-comments, .combined-search-page .search-result a.search-comments:visited, .combined-search-page .search-result .search-expando .md, .combined-search-page .search-result-group-header, .combined-search-page .search-result-body, .fancy-settings h1, .message.message-reply.recipient>.entry .head, .message.message-parent.recipient>.entry .head, .wiki-page .wiki-page-content .pagelisting ul, .gray, .sr-bar .separator, .res .sr-bar, .res .sr-bar a, .sr-bar a, #sr-header-area .dropdown.srdrop .selected, button[disabled], ::-webkit-file-upload-button[disabled], html input[type="button"][disabled], input[type="reset"][disabled], input[type="submit"][disabled]{color: $secondary}
+.side form.flairtoggle,
+.side .leavemoderator,
+.side .titlebox .bottom,
+.side .sidecontentbox .title h1,
+.side .sidebox .subtitle,
+.side .sidecontentbox .more a,
+.side span.score,
+.entry .buttons li a,
+.res .redditSingleClick,
+.tagline,
+.domain,
+.domain a,
+.spam .domain,
+.spam .domain a,
+#header-bottom-right .userkarma,
+#header-bottom-right .separator,
+.bottommenu,
+.debuginfo,
+.debuginfo .icon,
+.separator,
+#header #header-img:after,
+.link .score.unvoted,
+.sponsored-tagline,
+.res span.score,
+.md blockquote,
+.md del,
+.combined-search-page .search-result .search-result-meta,
+.combined-search-page .search-result a.search-comments,
+.combined-search-page .search-result a.search-comments:visited,
+.combined-search-page .search-result .search-expando .md,
+.combined-search-page .search-result-group-header,
+.combined-search-page .search-result-body,
+.fancy-settings h1,
+.message.message-reply.recipient > .entry .head,
+.message.message-parent.recipient > .entry .head,
+.wiki-page .wiki-page-content .pagelisting ul,
+.gray,
+.sr-bar .separator,
+.res .sr-bar,
+.res .sr-bar a,
+.sr-bar a,
+#sr-header-area .dropdown.srdrop .selected,
+button[disabled],
+::-webkit-file-upload-button[disabled],
+html input[type='button'][disabled],
+input[type='reset'][disabled],
+input[type='submit'][disabled] {
+  color: $secondary;
+}
 
-.md hr, .res #RESShortcutsEditContainer, .res #RESShortcutsSort, .res #RESShortcutsRight, .res #RESShortcutsLeft, .res #RESShortcutsAdd, .res #RESShortcutsTrash{background-color: $secondary}
-.sidecontentbox .content, .usertext-edit textarea, .submit.content textarea, input[type='text'], input[type='url'], .roundfield input[type=text], .roundfield input[type=url]{border: 1px solid $secondary}
-#sr-header-area{border-bottom: 1px solid $secondary}
-.combined-search-page .search-result-group-header{border-bottom: 2px solid $secondary}
-.md blockquote {border-left: 2px solid $secondary}
-.res .RES-keyNav-activeElement, .flairselector li.selected{border: 1px dashed $secondary}
-.comment .child, .comment .showreplies {border-left: 1px dotted $secondary}
+.md hr,
+.res #RESShortcutsEditContainer,
+.res #RESShortcutsSort,
+.res #RESShortcutsRight,
+.res #RESShortcutsLeft,
+.res #RESShortcutsAdd,
+.res #RESShortcutsTrash {
+  background-color: $secondary;
+}
+.sidecontentbox .content,
+.usertext-edit textarea,
+.submit.content textarea,
+input[type='text'],
+input[type='url'],
+.roundfield input[type='text'],
+.roundfield input[type='url'] {
+  border: 1px solid $secondary;
+}
+#sr-header-area {
+  border-bottom: 1px solid $secondary;
+}
+.combined-search-page .search-result-group-header {
+  border-bottom: 2px solid $secondary;
+}
+.md blockquote {
+  border-left: 2px solid $secondary;
+}
+.res .RES-keyNav-activeElement,
+.flairselector li.selected {
+  border: 1px dashed $secondary;
+}
+.comment .child,
+.comment .showreplies {
+  border-left: 1px dotted $secondary;
+}
 
-a, .md a, h2, .side .tagline a, .tagline a, .bottommenu a, .bottommenu a.updated, .wiki-page .wiki-page-content .description h2, .res .RESSubscriptionButton, .thing .title:visited, .thing.visited .title, .organic-listing .help, .combined-search-page .search-result div a, .combined-search-page .search-result a:visited, .combined-search-page a.search-title:visited, .combined-search-page .search-result .search-expando-button, .combined-search-page .search-result :link>mark, .search-result :visited, .search-result :visited>mark{color: $links;}
-.infobar, .content.submit .info-notice, .comment-visits-box, .res .RESDialogSmall.livePreview{border: 1px solid $links;}
-.res .RESDialogSmall.livePreview h3{border-bottom: 1px solid $links;}
+a,
+.md a,
+h2,
+.side .tagline a,
+.tagline a,
+.bottommenu a,
+.bottommenu a.updated,
+.wiki-page .wiki-page-content .description h2,
+.res .RESSubscriptionButton,
+.thing .title:visited,
+.thing.visited .title,
+.organic-listing .help,
+.combined-search-page .search-result div a,
+.combined-search-page .search-result a:visited,
+.combined-search-page a.search-title:visited,
+.combined-search-page .search-result .search-expando-button,
+.combined-search-page .search-result :link > mark,
+.search-result :visited,
+.search-result :visited > mark {
+  color: $links;
+}
+.infobar,
+.content.submit .info-notice,
+.comment-visits-box,
+.res .RESDialogSmall.livePreview {
+  border: 1px solid $links;
+}
+.res .RESDialogSmall.livePreview h3 {
+  border-bottom: 1px solid $links;
+}
 
-.link .score.dislikes, .error{color: $dw-red;}
+.link .score.dislikes,
+.error {
+  color: $dw-red;
+}
 
-.link .score.likes, .tagline .submitter{color: $dw-blue;}
-.flat-vert.title{border-bottom: 1px solid $dw-blue;}
-.morelink, .side .usertext .md p:nth-last-of-type(1) a, .side .usertext .md p:nth-last-of-type(2) a, .nextprev a, .usertable > .toggle{background: $dw-blue !important}
+.link .score.likes,
+.tagline .submitter {
+  color: $dw-blue;
+}
+.flat-vert.title {
+  border-bottom: 1px solid $dw-blue;
+}
+.morelink,
+.side .usertext .md p:nth-last-of-type(1) a,
+.side .usertext .md p:nth-last-of-type(2) a,
+.nextprev a,
+.usertable > .toggle {
+  background: $dw-blue !important;
+}
 
 @import 'header';
 @import 'sidebar';
 @import 'content';
 @import 'flairs';
+@import 'res';
