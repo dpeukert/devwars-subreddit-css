@@ -238,15 +238,8 @@ ul.image-preview-list .description pre {
   border: 0;
   background-color: transparent;
 }
-.usertext.grayed .usertext-body {
-  background-color: #2f2f2f;
-} /* deleted comment highlight */
-.usertext.border .usertext-body {
-  background-color: #2d2d22;
-} /* linked comment highlight */
-.comment.new-comment .usertext-body {
-  background-color: #353535;
-} /* new comment highlight */
+
+/* NEW COMMENT HIGHLIGHT */
 
 .new-comment .md :not(pre) > code,
 .link .md :not(pre) > code,
@@ -258,6 +251,23 @@ ul.image-preview-list .description pre {
   background-color: transparent;
   border-radius: 0;
 }
+
+.usertext.grayed .usertext-body{background-color: #2F2F2F} /* deleted comment highlight */
+.usertext.border .usertext-body{background-color: #2D2D22} /* linked comment highlight */
+.comment.new-comment .usertext-body{background-color: #353535}  /* new comment highlight */
+
+@mixin reddit-comments($comments) {
+    $sel: '';
+    @for $i from 1 through $comments {
+        $sel: if($i == 1, ".comment", selector-nest($sel, ".comment"));
+
+        .res-commentBoxes #{$sel} {
+            background-color: $primary-bg !important;
+			border-color: $secondary !important;
+        }
+    }
+}
+@include reddit-comments(10);
 
 /* LINE NUMBERS */
 
