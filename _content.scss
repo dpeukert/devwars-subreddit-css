@@ -94,7 +94,7 @@ ul.image-preview-list .description pre{color: $primary;}
 @mixin reddit-comments($comments) {
     $sel: '';
     @for $i from 1 through $comments {
-        $sel: if($i == 1, ".comment", selector-nest($sel, ".comment"));
+        $sel: if($i == 1, ".comment", selector-nest($sel, ".comment")) !global;
 
         .res-commentBoxes #{$sel} {
             background-color: $primary-bg !important;
@@ -102,6 +102,7 @@ ul.image-preview-list .description pre{color: $primary;}
         }
     }
 }
+
 @include reddit-comments(10);
 
 
