@@ -30,15 +30,23 @@ body{min-width: $min-width; background: $darker-primary-bg;}
 html[lang^='hs'] .link.linkflair-submission{display: none}
 textarea, input{box-shadow: none !important}
 
-button, ::-webkit-file-upload-button, html input[type="button"], input[type="reset"], input[type="submit"]{border: outset 1px}
-button[disabled], ::-webkit-file-upload-button[disabled], html input[type="button"][disabled], input[type="reset"][disabled], input[type="submit"][disabled]{background: #353535;}
+button, html input[type="button"], input[type="reset"], input[type="submit"]{border: outset 1px}
+button[disabled], html input[type="button"][disabled], input[type="reset"][disabled], input[type="submit"][disabled]{background: #353535;}
 
 .entry .buttons li.reported-stamp, #report-action-form, #report-action-form input[name='other_reason'], .usertext-edit textarea, .submit.content textarea,  input[type='text'], input[type='url'], input[type='password'], .flairselector.drop-choices.active, button, ::-webkit-file-upload-button, html input[type="button"], input[type="reset"], input[type="submit"]{background-color: $primary-bg;}
 .res #RESShortcutsSort, .res #RESShortcutsRight, .res #RESShortcutsLeft, .res #RESShortcutsAdd, .res #RESShortcutsTrash{color: $primary-bg;}
 
 .thing .entry .expando .md, .infobar, .content.submit .info-notice, .roundfield, .linefield, .linefield.mobile, .comment-visits-box, .res .RESDialogSmall.livePreview, .res .RESDialogSmall.livePreview h3, #search input[type='text'], .linkflairlabel, button:active, ::-webkit-file-upload-button:active, html input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active{background-color: $secondary-bg;}
 
-body, .md, .usertext .md, .thing .title, #header-bottom-right, #header-bottom-right a, .side .titlebox h1 a, .linefield .title, .flair, #header #header-img:before, .wikirevisionlisting .generic-table, #header .tabmenu li a, .linkflairlabel, .gold-accent.comment-visits-box, .usertext-edit textarea, .submit.content textarea, input[type='text'], input[type='url'], input[type='password'], .linkinfo .shortlink input, .res .RESDialogSmall.livePreview h3, .combined-search-page .search-result a.search-title, #report-action-form input[name='other_reason'], .footer .flat-vert.title, .reddit-infobar:not(.cookie-infobar) .md, .wiki-page .wikititle, .fancy-settings h1 strong, .message.recipient>.entry, button, ::-webkit-file-upload-button, html input[type="button"], input[type="reset"], input[type="submit"]{color: $primary;}
+body, .md, .usertext .md, .thing .title, #header-bottom-right, #header-bottom-right a, .side .titlebox h1 a, .linefield .title, .flair, #header #header-img:before, .wikirevisionlisting .generic-table, #header .tabmenu li a, .linkflairlabel, .gold-accent.comment-visits-box, .usertext-edit textarea, .submit.content textarea, input[type='text'], input[type='url'], input[type='password'], .linkinfo .shortlink input, .res .RESDialogSmall.livePreview h3, .combined-search-page .search-result a.search-title, #report-action-form input[name='other_reason'], .footer .flat-vert.title, .reddit-infobar:not(.cookie-infobar) .md, .wiki-page .wikititle, .fancy-settings h1 strong, .message.recipient>.entry, button, html input[type="button"], input[type="reset"], input[type="submit"]{color: $primary;}
+::-webkit-file-upload-button{
+	color: $primary;
+	border: outset 1px;
+	
+	&[disabled] {
+		background: #353535;
+	}
+}
 
 .side form.flairtoggle, .side .leavemoderator, .side .titlebox .bottom, .side .sidecontentbox .title h1, .side .sidebox .subtitle, .side .sidecontentbox .more a, .side span.score, .entry .buttons li a, .res .redditSingleClick, .tagline, .domain, .domain a, .spam .domain, .spam .domain a, #header-bottom-right .userkarma, #header-bottom-right .separator, .bottommenu, .debuginfo, .debuginfo .icon, .separator, #header #header-img:after, .link .score.unvoted, .sponsored-tagline, .res span.score, .md blockquote, .md del, .combined-search-page .search-result .search-result-meta, .combined-search-page .search-result a.search-comments, .combined-search-page .search-result a.search-comments:visited, .combined-search-page .search-result .search-expando .md, .combined-search-page .search-result-group-header, .combined-search-page .search-result-body, .fancy-settings h1, .message.message-reply.recipient>.entry .head, .message.message-parent.recipient>.entry .head, .wiki-page .wiki-page-content .pagelisting ul, .gray, .sr-bar .separator, .res .sr-bar, .res .sr-bar a, .sr-bar a, #sr-header-area .dropdown.srdrop .selected, button[disabled], ::-webkit-file-upload-button[disabled], html input[type="button"][disabled], input[type="reset"][disabled], input[type="submit"][disabled]{color: $secondary}
 
