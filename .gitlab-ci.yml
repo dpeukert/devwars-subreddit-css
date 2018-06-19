@@ -13,4 +13,4 @@ publish:
         name: production
     script:
         - "npx node-sass --output-style compressed --include-path ./ ./main.scss ./main.css"
-        - "node -e \"new (require('snoowrap'))(${CONFIG}).getSubreddit('DevWars').updateStylesheet({css: require('fs').readFileSync('./main.css', 'utf8'), reason: 'GitHub push'});\""
+        - "node -e \"new (require('snoowrap'))(${CONFIG}).getSubreddit('DevWars').updateStylesheet({css: require('fs').readFileSync('./main.css', 'utf8'), reason: 'GitHub push'}).then(()=>{process.exit(0);}).catch(()=>{process.exit(1);});\""
