@@ -8,5 +8,5 @@ publish:
     environment:
         name: production
     script:
-        - "node-sass --output-style compressed --include-path ./ ./main.scss ./main.css"
+        - "npx node-sass --output-style compressed --include-path ./ ./main.scss ./main.css"
         - "node -e \"new (require('snoowrap'))(${CONFIG}).getSubreddit('DevWars').updateStylesheet({css: `cat ./main.css`, reason: 'GitHub push'});\""
