@@ -53,15 +53,15 @@ ul.image-preview-list .description pre{color: $primary;}
 	}
 	
 	&.expanded {
-    	background-position: 0px 0px !important;
+		background-position: 0px 0px !important;
 	}
 	
 	&.collapsed.selftext {
-	    background-position: 0px -147px !important;
+		background-position: 0px -147px !important;
 	}
 	
 	&.collapsed.video {
-	    background-position: 0px -59px !important;
+		background-position: 0px -59px !important;
 	}
 }
 
@@ -91,16 +91,15 @@ ul.image-preview-list .description pre{color: $primary;}
 .usertext.border .usertext-body{background-color: #2D2D22} /* linked comment highlight */
 .comment.new-comment .usertext-body{background-color: #353535}  /* new comment highlight */
 
-@mixin reddit-comments($comments) {
-    $sel: '';
-    @for $i from 1 through $comments {
-        $sel: if($i == 1, ".comment", selector-nest($sel, ".comment")) !global;
-
-        .res-commentBoxes #{$sel} {
-            background-color: $primary-bg !important;
+ @mixin reddit-comments($comments) {
+	$sel: ".comment";
+	@for $i from 1 through $comments {
+		.res-commentBoxes #{$sel} {
+			background-color: $primary-bg !important;
 			border-color: $secondary !important;
-        }
-    }
+		}
+		$sel: selector-nest($sel, ".comment");
+	}
 }
 
 @include reddit-comments(10);
