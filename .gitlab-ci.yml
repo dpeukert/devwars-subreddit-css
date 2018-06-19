@@ -15,4 +15,4 @@ publish:
         - >-
             npx node-sass --output-style compressed --include-path ./ ./main.scss | sed -e 's/\/\*!/\/\*/g' > ./main.css
         - >-
-            node -e "new (require('snoowrap'))(${CONFIG}).getSubreddit('DevWars').updateStylesheet({css: require('fs').readFileSync('./main.css', 'utf8'), reason: 'GitHub push'}).then(()=>{process.exit(0);}).catch(()=>{process.exit(1);});"
+            node -e "new (require('snoowrap'))(${CONFIG}).getSubreddit('DevWars').updateStylesheet({css: require('fs').readFileSync('./main.css', 'utf8').trim(), reason: 'GitHub push'}).then(()=>{process.exit(0);}).catch(()=>{process.exit(1);});"
