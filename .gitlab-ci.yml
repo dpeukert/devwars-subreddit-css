@@ -1,12 +1,16 @@
 image: node:latest
 
 before_script:
-    - "npm install node-sass snoowrap"
+	- "npm install node-sass snoowrap"
+
+cache:
+	paths:
+	- node_modules/
 
 publish:
-    stage: deploy
-    environment:
-        name: production
-    script:
-        - "npx node-sass --output-style compressed --include-path ./ ./main.scss ./main.css"
-        - "node -e \"new (require('snoowrap'))(${CONFIG}).getSubreddit('DevWars').updateStylesheet({css: `cat ./main.css`, reason: 'GitHub push'});\""
+	stage: deploy
+	environment:
+		name: production
+	script:
+		- "npx node-sass --output-style compressed --include-path ./ ./main.scss ./main.css"
+		- "node -e \"new (require('snoowrap'))(${CONFIG}).getSubreddit('DevWars').updateStylesheet({css: `cat ./main.css`, reason: 'GitHub push'});\""
