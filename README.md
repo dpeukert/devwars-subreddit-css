@@ -1,6 +1,6 @@
 # /r/DevWars stylesheet
 
-When updated, this stylesheet is automatically compiled and uploaded to reddit using GitLab CI (https://gitlab.com/dpeukert/devwars-reddit-css).
+When updated, this stylesheet is automatically compiled and uploaded to reddit using [GitHub Actions](https://github.com/DevWars/reddit-css/blob/master/.github/workflows/subreddit-stylesheet.yml).
 
 ## Attributions
 
