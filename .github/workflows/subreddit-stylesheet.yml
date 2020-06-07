@@ -17,4 +17,4 @@ jobs:
       - run: |
           npm install node-sass@4.14.1 snoowrap@1.21.0
           npx node-sass --output-style compressed --include-path ./ ./main.scss > ./main.css
-          node -e "new (require('snoowrap'))(${{secrets.REDDIT_CONFIG}}).getSubreddit('DevWars').updateStylesheet({css: require('fs').readFileSync('./main.css', 'utf8').trim(), reason: 'GitHub push'}).then(()=>{process.exit(0);}).catch((err)=>{console.error(err); process.exit(1);});"
+          node -e 'new (require("snoowrap"))(${{secrets.REDDIT_CONFIG}}).getSubreddit("DevWars").updateStylesheet({css: require("fs").readFileSync("./main.css", "utf8").trim(), reason: "GitHub push"}).then(()=>{process.exit(0);}).catch((err)=>{console.error(err); process.exit(1);});'
